@@ -68,7 +68,9 @@ model Run {
   avgHr     Int
   maxHr     Int
   notes     String?
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  User User[]
 }
 
 model Goals {
