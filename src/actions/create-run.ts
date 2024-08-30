@@ -107,7 +107,7 @@ export async function createRun(
 
   console.log("Created run", run);
 
-  redirect("/runs");
+  redirect(`/run/${run.id}`);
 
   return {
     errors: {},
